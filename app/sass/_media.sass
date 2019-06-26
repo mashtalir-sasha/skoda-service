@@ -9,33 +9,452 @@
 
 //Large: ≥1200px  max-width: 1439px
 +media-breakpoint-down(lg)
+	.nav
+		&-list
+			&__item
+				a
+					margin-right: 5px
+	.advantages
+		&-item
+			max-width: 188px
+			margin: 0 10px 20px
+			&__txt
+				font-size: 14px
+	.services
+		&-item
+			&__ttl
+				font-size: 22px
+	.about
+		&-slider
+			&__slide
+				img
+					max-width: 220px
+	.diagnostics
+		&__ttl
+			font-size: 28px
+		&-form
+			&__input
+				width: 190px
+			&__btn
+				width: 190px
+	.sale__bg
+		max-width: 720px
+	.equipment
+		&__ttl
+			font-size: 30px
+		&-item
+			&__txt
+				font-size: 14px
+	.clients
+		&__logo
+			margin: 0 10px
+			max-width: 150px
 
 //Medium: ≥992px max-width: 1199px
 +media-breakpoint-down(md)
+	.mob-menu
+		height: 0
+		overflow: hidden
+		transition: all ease .3s
+		&.active
+			height: 100%
+			padding: 20px 0 40px
+			transition: all ease .3s
+		&__link
+			float: right
+	.nav
+		&-list
+			margin-bottom: 20px
+			&__item
+				display: block
+				a
+					font-size: 18px
+		&-phone
+			float: none
+			margin-bottom: 20px
+		&-lang
+			display: table
+			float: none
+	.advantages
+		&__ttl
+			margin-bottom: 40px
+		&-item
+			max-width: 215px
+			&.last
+				float: none
+				margin: 0 auto 20px
+	.services
+		&-item
+			&__ttl
+				font-size: 20px
+			&__btn
+				opacity: 1 !important
+	.diagnostics
+		&-form
+			.rline
+				float: none
+				margin: 0
+				margin-bottom: 20px
+				&.first
+					margin-top: 20px
+			&__input
+				width: 260px
+			&__btn
+				width: 260px
+				margin: 0
+				margin-bottom: 20px
+	.sale
+		&__img
+			display: none
+		&__bg
+			display: block
+			max-width: 100%
+		&-form
+			&__ttl
+				font-size: 18px
+	.washing
+		&-block
+			&__ttl
+				font-size: 24px
+			&__img
+				top: 95px
+	.equipment
+		&__txt
+			margin-bottom: 20px
+	.clients
+		&__logo
+			max-width: 114px
+	.reviews
+		&-control
+			position: relative
+			margin: 0 auto
+		&-slider
+			&__slide
+				&.mt100
+					margin-top: 0
 
 //Small: ≥768px max-width: 991px
 +media-breakpoint-down(sm)
+	.head
+		height: inherit
+		padding-bottom: 20px
+		&:before
+			left: 0
+		&-flex
+			height: inherit
+		&-title
+			max-width: inherit
+			border: none
+			&__top
+				display: none
+			&__bottom
+				display: none
+			&__ttl
+				text-align: center
+				&:before
+					left: 50%
+					margin-left: -25px
+				&:after
+					left: 50%
+					margin-left: -135px
+			&__txt
+				text-align: center
+		&-form
+			margin: 0 auto
+			position: relative
+			z-index: 2
+		&-slider
+			padding-bottom: 20px
+		&-bg
+			width: 100%
+			&:before
+				background: rgba(#000, .65)
+		&-control
+			margin: 0 auto
+	.advantages
+		&-item
+			width: 330px
+			max-width: inherit
+	.about
+		&__btn
+			margin-bottom: 40px
+	.diagnostics
+		&-form 
+			.rline
+				margin: 0 auto 20px
+			&__btn
+				display: block
+				float: none
+				margin: 0 auto 20px
+	.sale
+		&__bg
+			display: block
+			max-width: 100%
+			margin: 0 auto
+		&-form
+			float: none
+			margin: 0 auto
+	.washing
+		&-block
+			margin-bottom: 0
+		&__bg
+			display: block
+			max-width: 100%
+			position: static
+			margin: 0 auto
+	.equipment
+		&:before
+			display: none
+	.works
+		&-item
+			&__img
+				margin: 0 auto 20px
+	.clients
+		&__logo
+			max-width: 120px
+	.reviews
+		&-control
+			width: 100%
+	.contacts
+		&-item
+			&.discont
+				margin-bottom: 40px
+	.modal
+		&-about
+			&-form
+				.rline
+					margin: 0 29px 20px
+				&__btn
+					display: block
+					margin: 0 auto
+		&-service
+			&-form
+				&__input
+					width: 205px
 
 //Extra small: ≥576px max-width: 767px
 +media-breakpoint-down(xs)
+	.advantages
+		padding: 50px 0 30px
+		&-item
+			width: 100%
+			margin: 0 auto 20px
+			&__txt
+				text-align: center
+	.services
+		padding: 0 0 10px
+	.sale
+		padding: 0 0 50px
+	.diagnostics
+		&__img
+			display: none
+	.business
+		&:before
+			display: none
+		&__ttl
+			font-size: 26px
+		&__img
+			display: block
+			max-width: 100%
+			top: -50px
+	.washing
+		&-block
+			&__img
+				display: none
+	.slick-dots
+		li
+			width: 15px !important
+	.map
+		margin-top: 40px
+	.contacts
+		&__logo
+			display: block
+			margin: 40px auto
+	.dev
+		display: table
+		float: none
+		margin: 0 auto
+	.modal
+		&-about
+			padding: 40px 20px
+			&-form
+				display: block
+				&__ttl
+					font-size: 20px
+			.rline
+				float: none
+				margin: 0 auto 20px
+		&-business
+			padding: 40px 20px
+			&-form
+				display: block
+				&__ttl
+					font-size: 20px
+			.rline
+				float: none
+				margin: 0 auto 20px
+		&-service
+			padding: 40px 20px
+			&-form
+				.rline
+					float: none
+					margin: 0 auto 20px
+				&__input
+					width: 280px
+	select.modal-service-form__input
+		background-position: 250px 23px
+	.works
+		margin-top: 20px
+		&-slider
+			&__slide
+				&:nth-child(2n)
+					margin-top: 0
+	.equipment
+		padding: 0 0 30px
+		&-item
+			&__txt
+				text-align: center
+	.reviews
+		padding: 0 0 50px
 
 //Extra small: >0 max-width: 575px
 +media-breakpoint-down(xxs)
-
-
-/*==========  Mobile First  ==========*/
-
-//Extra small: <576px
-+media-breakpoint-up(xs)
-
-//Small: ≤576px
-+media-breakpoint-up(sm)
-
-//Medium: ≤768px
-+media-breakpoint-up(md)
-
-//Large: ≤992px
-+media-breakpoint-up(lg)
-
-//Extra large: ≤1200px
-+media-breakpoint-up(xl)
+	.head
+		&:before
+			display: none
+		&-title
+			&__ttl
+				font-size: 26px
+				padding-bottom: 0
+				&:before, &:after
+					display: none
+			&__txt
+				font-size: 16px
+		&-form
+			padding: 30px
+			&__ttl
+				font-size: 20px
+			&:before
+				top: 0
+				left: 0
+			.rline
+				margin: 0 auto 20px
+			&__btn
+				display: block
+				margin: 0 auto
+	.about
+		&:after
+			display: none
+		&-slider
+				img
+					max-width: inherit
+		&__btn
+			margin: 0 auto 40px
+	.diagnostics
+		.container
+			&:before
+				display: none
+		&__ttl
+			font-size: 24px
+	.sale-form
+		padding: 30px
+		&:before
+			display: none
+	.business
+		&__ttl
+			font-size: 22px
+	.washing
+		&-block
+			padding: 30px
+			&:before
+				display: none
+			&__ttl
+				font-size: 20px
+	.clients
+		padding-top: 50px
+		&:before
+			display: none
+		&__ttl
+			position: relative
+			top: inherit
+			left: inherit
+			padding: 0
+			background-color: transparent
+			padding-bottom: 20px
+			margin-bottom: 20px
+			&:before
+				bottom: 0
+				left: 0
+			&:after
+				bottom: 2px
+				left: 0
+		&-block
+			&:before
+				display: none
+		&-item
+			bottom: 0
+		&__logo
+			display: block
+			max-width: 100%
+			margin: 0 auto
+		&-slider
+			padding: 0 60px
+			margin-top: 40px
+			img
+				outline: none
+			.slick-arrow
+				width: 56px
+				height: 56px
+				font-size: 0
+				background-color: #B6B4B4
+				border-radius: 5px
+				position: absolute
+				top: 50%
+				margin-top: -28px
+				transition: all ease .3s
+				&:before
+					content: ''
+					width: 17px
+					height: 30px
+					background-size: 17px 30px
+					background-position: center center
+					background-repeat: no-repeat
+					position: absolute
+					top: 13px
+					left: 19px
+				&.slick-prev
+					left: 0
+					&:before
+						background-image: url(../img/head_slide_prev.svg)
+				&.slick-next
+					right: 0
+					&:before
+						background-image: url(../img/head_slide_next.svg)
+				&:hover
+					transition: all ease .3s
+					background: linear-gradient(180deg, #069F2C 0%, #05B847 96.15%), $accent
+	.contacts
+		&__subttl
+			text-align: center
+		&__phone
+			text-align: center
+		&__addr
+			text-align: center
+		&__time
+			text-align: center
+		&-soc
+			display: table
+			margin: 40px auto 0
+	.advantages, .services, .about, .sale, .business, .equipment, .works, .clients, .reviews, .contacts
+		&__ttl
+			padding-bottom: 0
+			&:before, &:after
+				display: none
+	.modal
+		&-service
+			&__ttl
+				font-size: 20px
+			&-list
+				&__item
+					float: none
+					width: 100%

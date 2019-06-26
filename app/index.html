@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Starter</title>
+	<title>Skoda Service</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -15,18 +15,944 @@
 	<meta property="og:image" content=""/>
 	-->
 	<link rel="icon" href="img/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-	<meta name="theme-color" content="#000">
+	<meta name="theme-color" content="#00C24B">
 </head>
 
 <body>
 
+	<div id="top"></div>
+
 	<div class="content">
+		<nav class="nav">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-2 col-6">
+						<a href="#top">
+							<img src="img/logo.png" alt="skoda" class="nav-logo">
+						</a>
+					</div>
+					<div class="col-lg-7 d-none d-lg-block">
+						<ul class="nav-list">
+							<li class="nav-list__item"><a href="#services" class="anchor">Услуги СТО</a></li>
+							<li class="nav-list__item"><a href="#sale" class="anchor">Продажа запчастей</a></li>
+							<li class="nav-list__item"><a href="#diagnostics" class="anchor">Запись на диагностику</a></li>
+							<li class="nav-list__item"><a href="#washing" class="anchor">Автомойка</a></li>
+							<li class="nav-list__item"><a href="#about" class="anchor">О нас</a></li>
+							<li class="nav-list__item"><a href="#contacts" class="anchor">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 d-none d-lg-block">
+						<a href="tel:+380674000176" class="nav-phone">+38(067) 400 01 76</a>
+						<div class="nav-lang">
+							<span>Рус</span>
+							<a href="#" class="nav-lang__select">Укр</a>
+						</div>
+					</div>
+					<div class="col-6 d-block d-lg-none">
+						<div class="mob-menu__link">
+							<img src="img/menu.svg" alt="skoda" width="34" height="34">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mob-menu d-block d-lg-none">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<ul class="nav-list">
+								<li class="nav-list__item"><a href="#services" class="anchor">Услуги СТО</a></li>
+								<li class="nav-list__item"><a href="#sale" class="anchor">Продажа запчастей</a></li>
+								<li class="nav-list__item"><a href="#diagnostics" class="anchor">Запись на диагностику</a></li>
+								<li class="nav-list__item"><a href="#washing" class="anchor">Автомойка</a></li>
+								<li class="nav-list__item"><a href="#about" class="anchor">О нас</a></li>
+								<li class="nav-list__item"><a href="#contacts" class="anchor">Контакты</a></li>
+							</ul>
+							<a href="tel:+380674000176" class="nav-phone">+38(067) 400 01 76</a>
+							<div class="nav-lang">
+								<span>Рус</span>
+								<a href="#" class="nav-lang__select">Укр</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<header class="head">
+			<div class="head-slider">
+				<div class="head-slider__slide">
+					<div class="head-bg" style="background-image: url(img/head1.jpg);"></div>
+					<div class="head-flex">
+						<div class="head-flex__content container">
+							<div class="row align-items-center">
+								<div class="col-lg-8 col-md-7">
+									<div class="head-title">
+										<div class="head-title__top"></div>
+										<h1 class="head-title__ttl">Мы - единственная <span>официальная СТО ŠKODA</span> в Кременкук</h1>
+										<p class="head-title__txt">Проводим плановое ТО, ремонтные и лакокрасочные работы, восстанавливаем авто после аварий, предоставляем услуги автоэлектрика</p>
+										<div class="head-title__bottom"></div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-5">
+									<form action="mail.php" class="form_check head-form" autocomplete="flase">
+										<input type="hidden" name="title" value="Рассчитать стоимость ремонта">
+										<h3 class="head-form__ttl">Рассчитать стоимость ремонта</h3>
+										<div class="rline">
+											<input type="text" name="work" class="head-form__input" placeholder="Что нужно сделать?">
+										</div>
+										<div class="rline">
+											<input type="text" name="parts" class="head-form__input" placeholder="Какие запчасти нужны?">
+										</div>
+										<div class="rline">
+											<input type="text" name="name" class="head-form__input" placeholder="Имя:">
+										</div>
+										<div class="rline">
+											<input type="text" name="phone" class="rfield phonefield head-form__input" placeholder="Телефон:">
+										</div>
+										<button type="submit" class="btnsubmit head-form__btn">Отправить</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="head-slider__slide">
+					<div class="head-bg" style="background-image: url(img/head2.jpg);"></div>
+					<div class="head-flex">
+						<div class="head-flex__content container">
+							<div class="row align-items-center">
+								<div class="col-lg-8 col-md-7">
+									<div class="head-title">
+										<div class="head-title__top"></div>
+										<h1 class="head-title__ttl">Мы - единственная <span>официальная СТО ŠKODA</span> в Кременкук</h1>
+										<p class="head-title__txt">Для Вас возможна оплата картой, рассрочка и оплата частями. Комфортная зона отдыха с кафе и WiFi.</p>
+										<div class="head-title__bottom"></div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-5">
+									<form action="mail.php" class="form_check head-form" autocomplete="flase">
+										<input type="hidden" name="title" value="Рассчитать стоимость ремонта">
+										<h3 class="head-form__ttl">Рассчитать стоимость ремонта</h3>
+										<div class="rline">
+											<input type="text" name="work" class="rfield head-form__input" placeholder="Что нужно сделать?">
+										</div>
+										<div class="rline">
+											<input type="text" name="parts" class="rfield head-form__input" placeholder="Какие запчасти нужны?">
+										</div>
+										<div class="rline">
+											<input type="text" name="name" class="rfield head-form__input" placeholder="Имя:">
+										</div>
+										<div class="rline">
+											<input type="text" name="phone" class="rfield phonefield head-form__input" placeholder="Телефон:">
+										</div>
+										<button type="submit" class="btnsubmit head-form__btn">Отправить</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="head-slider__slide">
+					<div class="head-bg" style="background-image: url(img/head3.jpg);"></div>
+					<div class="head-flex">
+						<div class="head-flex__content container">
+							<div class="row align-items-center">
+								<div class="col-lg-8 col-md-7">
+									<div class="head-title">
+										<div class="head-title__top"></div>
+										<h1 class="head-title__ttl">Мы - единственная <span>официальная СТО ŠKODA</span> в Кременкук</h1>
+										<p class="head-title__txt">Сравним для вас цены на запчасти у всех поставщиков и проконсультируем при выборе. Предоставляем 2 года гарантии на запчасти и работу.</p>
+										<div class="head-title__bottom"></div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-5">
+									<form action="mail.php" class="form_check head-form" autocomplete="flase">
+										<input type="hidden" name="title" value="Рассчитать стоимость ремонта">
+										<h3 class="head-form__ttl">Рассчитать стоимость ремонта</h3>
+										<div class="rline">
+											<input type="text" name="work" class="rfield head-form__input" placeholder="Что нужно сделать?">
+										</div>
+										<div class="rline">
+											<input type="text" name="parts" class="rfield head-form__input" placeholder="Какие запчасти нужны?">
+										</div>
+										<div class="rline">
+											<input type="text" name="name" class="rfield head-form__input" placeholder="Имя:">
+										</div>
+										<div class="rline">
+											<input type="text" name="phone" class="rfield phonefield head-form__input" placeholder="Телефон:">
+										</div>
+										<button type="submit" class="btnsubmit head-form__btn">Отправить</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="head-slider__slide">
+					<div class="head-bg" style="background-image: url(img/head4.jpg);"></div>
+					<div class="head-flex">
+						<div class="head-flex__content container">
+							<div class="row align-items-center">
+								<div class="col-lg-8 col-md-7">
+									<div class="head-title">
+										<div class="head-title__top"></div>
+										<h1 class="head-title__ttl">Мы - единственная <span>официальная СТО ŠKODA</span> в Кременкук</h1>
+										<p class="head-title__txt">Найдём причину и решим любую проблему с авто благодаря нашему опыту более 10 лет и сертифицированному оборудованию.</p>
+										<div class="head-title__bottom"></div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-5">
+									<form action="mail.php" class="form_check head-form" autocomplete="flase">
+										<input type="hidden" name="title" value="Рассчитать стоимость ремонта">
+										<h3 class="head-form__ttl">Рассчитать стоимость ремонта</h3>
+										<div class="rline">
+											<input type="text" name="work" class="rfield head-form__input" placeholder="Что нужно сделать?">
+										</div>
+										<div class="rline">
+											<input type="text" name="parts" class="rfield head-form__input" placeholder="Какие запчасти нужны?">
+										</div>
+										<div class="rline">
+											<input type="text" name="name" class="rfield head-form__input" placeholder="Имя:">
+										</div>
+										<div class="rline">
+											<input type="text" name="phone" class="rfield phonefield head-form__input" placeholder="Телефон:">
+										</div>
+										<button type="submit" class="btnsubmit head-form__btn">Отправить</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="head-slider__slide">
+					<div class="head-bg" style="background-image: url(img/head5.jpg);"></div>
+					<div class="head-flex">
+						<div class="head-flex__content container">
+							<div class="row align-items-center">
+								<div class="col-lg-8 col-md-7">
+									<div class="head-title">
+										<div class="head-title__top"></div>
+										<h1 class="head-title__ttl">Мы - единственная <span>официальная СТО ŠKODA</span> в Кременкук</h1>
+										<p class="head-title__txt">Все работы проводим согласно регламента производителя - вы не переплатите за работу и получите услуги максимального качества.</p>
+										<div class="head-title__bottom"></div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-5">
+									<form action="mail.php" class="form_check head-form" autocomplete="flase">
+										<input type="hidden" name="title" value="Рассчитать стоимость ремонта">
+										<h3 class="head-form__ttl">Рассчитать стоимость ремонта</h3>
+										<div class="rline">
+											<input type="text" name="work" class="rfield head-form__input" placeholder="Что нужно сделать?">
+										</div>
+										<div class="rline">
+											<input type="text" name="parts" class="rfield head-form__input" placeholder="Какие запчасти нужны?">
+										</div>
+										<div class="rline">
+											<input type="text" name="name" class="rfield head-form__input" placeholder="Имя:">
+										</div>
+										<div class="rline">
+											<input type="text" name="phone" class="rfield phonefield head-form__input" placeholder="Телефон:">
+										</div>
+										<button type="submit" class="btnsubmit head-form__btn">Отправить</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="head-control">
+				
+			</div>
+		</header>
+
+		<section class="advantages">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-3">
+						<h3 class="advantages__ttl">Преимущества</h3>
+					</div>
+					<div class="col-lg-9">
+						<div class="advantages-item advantages-item_black">
+							<div class="advantages-item__numb">1</div>
+							<div class="advantages-item__ico advantages-item__ico_i1"></div>
+							<p class="advantages-item__txt">Гарантийный ремонт авто марки Škoda</p>
+						</div>
+						<div class="advantages-item advantages-item_grey">
+							<div class="advantages-item__numb">2</div>
+							<div class="advantages-item__ico advantages-item__ico_i2"></div>
+							<p class="advantages-item__txt"><span>ПОСТГАРАНТИЙНЫЙ ремонт</span> любых авто</p>
+						</div>
+						<div class="advantages-item advantages-item_black">
+							<div class="advantages-item__numb">3</div>
+							<div class="advantages-item__ico advantages-item__ico_i3"></div>
+							<p class="advantages-item__txt">Работают <span>более 20 специалистов,</span> которые не пропадают и всегда на связи</p>
+						</div>
+						<div class="advantages-item advantages-item_grey">
+							<div class="advantages-item__numb">4</div>
+							<div class="advantages-item__ico advantages-item__ico_i4"></div>
+							<p class="advantages-item__txt"><span>Более 2000 наименований</span> запчастей в наличии</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="advantages-item advantages-item_black">
+							<div class="advantages-item__numb">5</div>
+							<div class="advantages-item__ico advantages-item__ico_i5"></div>
+							<p class="advantages-item__txt"><span>Более 10 лет</span> на рынке и и работаем без выходных</p>
+						</div>
+						<div class="advantages-item advantages-item_grey">
+							<div class="advantages-item__numb">6</div>
+							<div class="advantages-item__ico advantages-item__ico_i6"></div>
+							<p class="advantages-item__txt">Чётко соблюдаем <span>сроки и регламент</span> работ</p>
+						</div>
+						<div class="advantages-item advantages-item_black">
+							<div class="advantages-item__numb">7</div>
+							<div class="advantages-item__ico advantages-item__ico_i7"></div>
+							<p class="advantages-item__txt"><span>Более 5 000</span> постоянных клиентов со всей Украины</p>
+						</div>
+						<div class="advantages-item advantages-item_grey">
+							<div class="advantages-item__numb">8</div>
+							<div class="advantages-item__ico advantages-item__ico_i8"></div>
+							<p class="advantages-item__txt"><span>2 года полной гарантии</span> на оригинальные запчасти и работу по их замене</p>
+						</div>
+						<div class="clearfix d-block d-lg-none"></div>
+						<div class="advantages-item advantages-item_black last">
+							<div class="advantages-item__numb">9</div>
+							<div class="advantages-item__ico advantages-item__ico_i9"></div>
+							<p class="advantages-item__txt"><span>Рассрочка, оплата частями,</span> WiFi и комфортная зона ожидания</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="services" id="services">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-xs-auto">
+						<h3 class="services__ttl">Услуги</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<div class="services-item services-item_i1">
+							<h4 class="services-item__ttl">ТО<br>автомобиля</h4>
+						</div>
+						<a href="#service-modal" class="services-item__btn fancybox">Подробнее</a>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="services-item services-item_i2">
+							<h4 class="services-item__ttl">Диагностика и ремонт выхлопной системы</h4>
+						</div>
+						<a href="#service-modal" class="services-item__btn fancybox">Подробнее</a>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="services-item services-item_i3">
+							<h4 class="services-item__ttl">Диагностика и обслуживание трансмиссии</h4>
+						</div>
+						<a href="#service-modal" class="services-item__btn fancybox">Подробнее</a>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="services-item services-item_i4">
+							<h4 class="services-item__ttl">Диагностика и ремонт тормозной системы</h4>
+						</div>
+						<a href="#service-modal" class="services-item__btn fancybox">Подробнее</a>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="services-item services-item_i5">
+							<h4 class="services-item__ttl">Диагностика и ремонт ходовой системы</h4>
+						</div>
+						<a href="#service-modal" class="services-item__btn fancybox">Подробнее</a>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="services-item services-item_i6">
+							<h4 class="services-item__ttl">Диагностика и ремонт рулевой системы</h4>
+						</div>
+						<a href="#service-modal" class="services-item__btn fancybox">Подробнее</a>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="services-item services-item_i7">
+							<h4 class="services-item__ttl">Ремонт и чистка автокондиционеров</h4>
+						</div>
+						<a href="#service-modal" class="services-item__btn fancybox">Подробнее</a>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="services-item services-item_i8">
+							<h4 class="services-item__ttl">Диагностика и ремонт двигателя</h4>
+						</div>
+						<a href="#service-modal" class="services-item__btn fancybox">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about" id="about">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6 offset-lg-1 col-md-6">
+						<h3 class="about__ttl">О нас</h3>
+						<p class="about__subttl">ООО «Автоцентр-Кременчук-2012» имеет статус официального сертифицированого дилера в сфере обслуживания продукции марки Škoda в Украине.</p>
+					</div>
+					<div class="col-lg-5 col-md-6">
+						<img src="img/about_pattern.svg" alt="skoda" class="img-r">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-5 col-md-6">
+						<p class="about__txt">ООО «Автоцентр-Кременчук-2012» является высокотехническим, универсальным сервисным центром , который предоставляет полный комплекс услуг по техническому обслуживанию и ремонту автомобилей.<br>Мы работаем строго по нормам времени на каждую задачу, мы скрупулезно следим за их выполнением, что возможно только в официальном Сервисном центре.</p>
+						<p class="about__txt">К нам приезжают из других городов и областей, так как за 10 лет мы заслужили репутацию и доверие наших клиентов и даём гарантии на все наши работы.</p>
+						<p class="about__txt last">Также у нас расположен магазин запасных частей и аксессуаров, в котором представлен широкий выбор позиций от ведущих производителей.<br>Ежегодно все наши специалисты проходят единую международную сертификацию, Вы можете доверить нам самое важное - свой автомобиль и не переживать, что работа будет проделана некачественно.<br>Каждый раз с актом сдачи работ мы проводим внутренний контроль качества выполненных работ.</p>
+						<a href="#about-modal" class="about__btn fancybox">Получить консультацию</a>
+					</div>
+					<div class="col-lg-7 col-md-6">
+						<img src="img/about_video.jpg" alt="skoda" class="img-r">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="about-slider">
+							<img src="img/about_slide1.jpg" alt="skoda" class="img-r">
+							<img src="img/about_slide2.jpg" alt="skoda" class="img-r">
+							<img src="img/about_slide3.jpg" alt="skoda" class="img-r">
+							<img src="img/about_slide4.jpg" alt="skoda" class="img-r">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="diagnostics" id="diagnostics">
+			<div class="container">
+				<img src="img/diagnostics_img.png" alt="skoda" class="diagnostics__img img-r">
+				<div class="row align-items-center">
+					<div class="col-md-4 offset-1 col-sm-7 col-10">
+						<h3 class="diagnostics__ttl">Запишитесь на <span>диагностику</span> сейчас!</h3>
+						<p class="diagnostics__txt">Всегда дешевле найти причину, исправить проблему на ранней стадии, чем делать потом капремонт.</p>
+					</div>
+					<div class="col-md-5 offset-1 offset-md-0 col-10">
+						<form action="mail.php" class="diagnostics-form form_check" autocomplete="flase">
+							<input type="hidden" name="title" value="Записаться на диагностику">
+							<div class="rline first">
+								<input type="text" name="name" class="diagnostics-form__input" placeholder="Имя:">
+							</div>
+							<div class="rline">
+								<input type="text" name="phone" class="rfield phonefield diagnostics-form__input" placeholder="Телефон:">
+							</div>
+							<div class="rline">
+								<input type="text" name="date" class="diagnostics-form__input" placeholder="Дата и время:">
+							</div>
+							<button type="submit" class="btnsubmit diagnostics-form__btn">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="sale" id="sale">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6 offset-md-1">
+						<img src="img/sale_img2.png" alt="skoda" class="sale__img img-r">
+						<h3 class="sale__ttl">Продажа запчастей</h3>
+						<p class="sale__txt">На складе автоцентра всегда в наличии необходимые Вам автозапчасти. Также мы сотрудничаем со всеми оптовыми поставщиками, что позволит Вам в кратчайшие сроки получить свою запчасть по оптимальной цене.</p>
+						<p class="sale__txt">При установке у нас оригинальных запчастей - <span>гарантия 2 года.</span><br>Проведём консультацию при подборе и доставим по всей Украине.</p>
+						<img src="img/sale_img.png" alt="skoda" class="sale__bg">
+					</div>
+					<div class="col-md-5">
+						<form action="mail.php" class="sale-form form_check" autocomplete="flase">
+							<input type="hidden" name="title" value="Получить консультацию и точную стоимость запчастей">
+							<h4 class="sale-form__ttl">Получите <span>бесплатную консультацию</span> специалиста и узнайте <span>точную стоимость</span> запчасти</h4>
+							<div class="rline">
+								<input type="text" name="name" class="sale-form__input" placeholder="Имя:">
+							</div>
+							<div class="rline">
+								<input type="text" name="phone" class="rfield phonefield sale-form__input" placeholder="Телефон:">
+							</div>
+							<div class="rline">
+								<input type="text" name="part" class="sale-form__input" placeholder="Что нужно купить:">
+							</div>
+							<button type="submit" class="btnsubmit sale-form__btn">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="business">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-xl-9 col-lg-10">
+						<h3 class="business__ttl">Предоставляем услуги по обсуживанию автопарка малого, среднего и крупного бизнеса</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-5 col-sm-6">
+						<div class="business-item business-item_i1">
+							<h4 class="business-item__ttl">Юридические лица</h4>
+						</div>
+					</div>
+					<div class="col-lg-5 col-sm-6">
+						<div class="business-item business-item_i2">
+							<h4 class="business-item__ttl">Лизинговые компании</h4>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-5 offset-lg-2 col-sm-6">
+						<div class="business-item business-item_i3">
+							<h4 class="business-item__ttl business-item__ttl_right">Аграрные холдинги</h4>
+						</div>
+					</div>
+					<div class="col-lg-5 col-sm-6">
+						<div class="business-item business-item_i4">
+							<h4 class="business-item__ttl business-item__ttl_right">Компании по прокату<br>автомобилей</h4>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<img src="img/business_pattern.svg" alt="skoda" class="business__img">
+					<div class="col-lg-5 offset-lg-7">
+						<a href="#business-modal" class="business__btn fancybox">Узнать условия</a>
+					</div>
+				</div>
+			</div>
+		</section>
 		
+		<section class="washing" id="washing">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-7 col-lg-8 col-md-8">
+						<div class="washing-block">
+							<img src="img/washing_img.svg" alt="skoda" class="washing-block__img">
+							<h3 class="washing-block__ttl">Автомойка – качественно моем ваш авто после сервисного обслуживания</h3>
+							<p class="washing-block__txt">Сервисный центр «Автоцентр-Кременчук-2012» предлагает каждому клиенту после сервисного обслуживания услуги: ручной, технологической, бесконтактной мойки, а также комплексной химчистки.</p>
+							<p class="washing-block__txt">Все работы проводятся профессиональным, немецким оборудованием Karcher, с использованием лучшей автохимии.</p>
+						</div>
+					</div>
+				</div>
+				<img src="img/washing_bg.jpg" alt="skoda" class="washing__bg">
+			</div>
+		</section>
+
+		<section class="equipment">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-5 d-none d-md-block">
+						<img src="img/equipment1.jpg" alt="skoda" class="equipment__img img-r">
+					</div>
+					<div class="col-md-4">
+						<h3 class="equipment__ttl">Наше оборудование</h3>
+						<p class="equipment__txt">СТО Кременкук Škoda оснащена только современным высококачественным оборудованием, а именно:</p>
+					</div>
+					<div class="col-md-3 d-none d-md-block">
+						<img src="img/equipment2.png" alt="skoda" class="equipment__img img-r">
+					</div>
+				</div>
+				<div class="row align-items-center">
+					<div class="col-md-4 d-none d-md-block">
+						<img src="img/equipment3.jpg" alt="skoda" class="equipment__img img-r">
+					</div>
+					<div class="col-md-2 col-sm-6">
+						<div class="equipment-item equipment-item_black">
+							<div class="equipment-item__numb">1</div>
+							<div class="equipment-item__ico equipment-item__ico_i1"></div>
+							<p class="equipment-item__txt">5 постов общего ремонта для легковых автомобилей (OMA, Италия).</p>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-6">
+						<div class="equipment-item equipment-item_grey">
+							<div class="equipment-item__numb">2</div>
+							<div class="equipment-item__ico equipment-item__ico_i2"></div>
+							<p class="equipment-item__txt">Пост автоэлектрика.</p>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-6">
+						<div class="equipment-item equipment-item_black">
+							<div class="equipment-item__numb">3</div>
+							<div class="equipment-item__ico equipment-item__ico_i3"></div>
+							<p class="equipment-item__txt">Пост регулировки углов развала и схождения (BEISSBARTH, Германия).</p>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-6">
+						<div class="equipment-item equipment-item_grey">
+							<div class="equipment-item__numb">4</div>
+							<div class="equipment-item__ico equipment-item__ico_i4"></div>
+							<p class="equipment-item__txt">2 поста ремонта с гидро-подъемниками для коммерческих автомобилей (OMA, Италия).</p>
+						</div>
+					</div>
+				</div>
+				<div class="row align-items-center">
+					<div class="col-md-2 offset-md-1 col-sm-6">
+						<div class="equipment-item equipment-item_black">
+							<div class="equipment-item__numb">5</div>
+							<div class="equipment-item__ico equipment-item__ico_i5"></div>
+							<p class="equipment-item__txt">Пост шиномонтажа, балансировки и шиноремонта колес (BEISSBARTH, Германия).</p>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-6">
+						<div class="equipment-item equipment-item_grey">
+							<div class="equipment-item__numb">6</div>
+							<div class="equipment-item__ico equipment-item__ico_i6"></div>
+							<p class="equipment-item__txt">Пост тюнинга.</p>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-6">
+						<div class="equipment-item equipment-item_black">
+							<div class="equipment-item__numb">7</div>
+							<div class="equipment-item__ico equipment-item__ico_i3"></div>
+							<p class="equipment-item__txt">Пост компьютерной диагностики (дилерский прибор VW– VAS, мультискан Bosch, Германия).</p>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-6">
+						<div class="equipment-item equipment-item_grey">
+							<div class="equipment-item__numb">8</div>
+							<div class="equipment-item__ico equipment-item__ico_i8"></div>
+							<p class="equipment-item__txt">Автомойка.</p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<a href="#service-modal" class="equipment__btn fancybox">Записаться</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="works">
+			<div class="container">
+				<div class="row">
+					<div class="col offset-md-1">
+						<h3 class="works__ttl">Наши кейсы</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="works-slider">
+							<div class="works-slider__slide">
+								<div class="works-item">
+									<div class="works-item__numb">1</div>
+									<img src="img/works1.jpg" alt="skoda" class="works-item__img img-r">
+									<p class="works-item__txt">Интересная и необычная задача от постоянного клиента – увеличение клиренса европейского полноприводного VWPassat, путем выбора, заказа и установки всех оригинальных запасных частей. Изменения в клиренсе были внесены опираясь на многолетний опыт ремонта VAG группы. Клиент доволен результатом и уже несколько лет эксплуатирует авто.</p>
+								</div>
+							</div>
+							<div class="works-slider__slide">
+								<div class="works-item">
+									<div class="works-item__numb">2</div>
+									<img src="img/works2.jpg" alt="skoda" class="works-item__img img-r">
+									<p class="works-item__txt">Самыми интересными сделками сервиса всегда являются сложные ремонты. Речь идет о замене двигателя, КПП, АКПП, турбины, ремонт двигателя − данные типы ремонтных работ всегда связаны с неправильной эксплуатацией, нарушением регламента или естественным износом. Несмотря на сложность ситуации, мы всегда находим пути решения для клиента, тем самым получая его лояльность и доверие!</p>
+								</div>
+							</div>
+							<div class="works-slider__slide">
+								<div class="works-item">
+									<div class="works-item__numb">3</div>
+									<img src="img/works3.jpg" alt="skoda" class="works-item__img img-r">
+									<p class="works-item__txt">Задача от клиента – установить 3-х зональный климат на переоборудованный VW T5. В ходе работы был выполнен сравнительный анализ двух автомобилей с 2-х и 3-х зональными климатами. Автоцентр Кременкук выявил детали подлежащие замене. Недостающие детали были заказаны и установлены в этот автомобиль. Теперь наш клиент в самую жаркую пору ездит с комфортом в прохладном салоне.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-auto">
+						<div class="works-control"></div>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-auto">
+						<img src="img/works_pattern.svg" alt="skoda" class="img-r">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="clients">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-11">
+						<div class="clients-block">
+							<h3 class="clients__ttl">Наши клиенты</h3>
+							<img src="img/clients_bg.jpg" alt="skoda" class="clients-block__img img-r">
+							<div class="clients-item d-none d-sm-block">
+								<img src="img/logo1.png" alt="skoda" class="clients-item__img">
+								<img src="img/logo2.png" alt="skoda" class="clients-item__img">
+								<img src="img/logo3.png" alt="skoda" class="clients-item__img">
+								<img src="img/logo4.png" alt="skoda" class="clients-item__img">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col d-none d-sm-block">
+						<img src="img/client1.png" alt="skoda" class="clients__logo">
+						<img src="img/client2.png" alt="skoda" class="clients__logo">
+						<img src="img/client3.png" alt="skoda" class="clients__logo">
+						<img src="img/client4.png" alt="skoda" class="clients__logo">
+						<img src="img/client5.png" alt="skoda" class="clients__logo">
+						<img src="img/client6.png" alt="skoda" class="clients__logo">
+						<img src="img/client7.png" alt="skoda" class="clients__logo">
+						<img src="img/client8.png" alt="skoda" class="clients__logo">
+						<img src="img/client9.png" alt="skoda" class="clients__logo">
+						<img src="img/client10.png" alt="skoda" class="clients__logo">
+						<img src="img/client11.png" alt="skoda" class="clients__logo">
+						<img src="img/client12.png" alt="skoda" class="clients__logo">
+						<img src="img/client13.png" alt="skoda" class="clients__logo">
+					</div>
+					<div class="col d-block d-sm-none">
+						<div class="clients-slider">
+							<div><img src="img/client1.png" alt="skoda" class="clients__logo"></div>
+							<div><img src="img/client2.png" alt="skoda" class="clients__logo"></div>
+							<div><img src="img/client3.png" alt="skoda" class="clients__logo"></div>
+							<div><img src="img/client4.png" alt="skoda" class="clients__logo"></div>
+							<div><img src="img/client5.png" alt="skoda" class="clients__logo"></div>
+							<div><img src="img/client6.png" alt="skoda" class="clients__logo"></div>
+							<div><img src="img/client7.png" alt="skoda" class="clients__logo"></div>
+							<div><img src="img/client8.png" alt="skoda" class="clients__logo"></div>
+							<div><img src="img/client9.png" alt="skoda" class="clients__logo"></div>
+							<div><img src="img/client10.png" alt="skoda" class="clients__logo"></div>
+							<div><img src="img/client11.png" alt="skoda" class="clients__logo"></div>
+							<div><img src="img/client12.png" alt="skoda" class="clients__logo"></div>
+							<div><img src="img/client13.png" alt="skoda" class="clients__logo"></div>
+							<div><img src="img/logo1.png" alt="skoda" class="clients__logo"></div>
+							<div><img src="img/logo2.png" alt="skoda" class="clients__logo"></div>
+							<div><img src="img/logo3.png" alt="skoda" class="clients__logo"></div>
+							<div><img src="img/logo4.png" alt="skoda" class="clients__logo"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="reviews">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-7">
+						<h3 class="reviews__ttl">Отзывы</h3>
+					</div>
+					<div class="col-md-5">
+						<img src="img/reviews_pattern.svg" alt="skoda" class="reviews__img img-r">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="reviews-slider">
+							<div class="reviews-slider__slide">
+								<div class="reviews-item reviews-item_black">
+									<div class="reviews-item__name">Валерий Крекотень</div>
+									<p class="reviews-item__txt">Гарний автосалон.</p>
+								</div>
+							</div>
+							<div class="reviews-slider__slide">
+								<div class="reviews-item reviews-item_grey">
+									<div class="reviews-item__name">Андрей Гаркуша</div>
+									<p class="reviews-item__txt">Хороший сервис для всей линейки VAG (в отличие от соседей напротив). Толковые приемщики, грамотные мастера ...</p>
+								</div>
+							</div>
+							<div class="reviews-slider__slide mt100">
+								<div class="reviews-item reviews-item_black">
+									<div class="reviews-item__name">Oleksandr Katerinyuk</div>
+									<p class="reviews-item__txt">По дорозі до моря зламався автомобіль. Персонал станції професійно та в короткий термін ...</p>
+								</div>
+							</div>
+							<div class="reviews-slider__slide mt100">
+								<div class="reviews-item reviews-item_grey">
+									<div class="reviews-item__name">Илза Викторова</div>
+									<p class="reviews-item__txt">Были в Кременкуке проездом,прямо в городе отказало сцепление. Обратились в этот автосалон. Персонал- все просто умнички! ...</p>
+								</div>
+							</div>
+							<div class="reviews-slider__slide">
+								<div class="reviews-item reviews-item_black">
+									<div class="reviews-item__name">Валерий Крекотень</div>
+									<p class="reviews-item__txt">Гарний автосалон.</p>
+								</div>
+							</div>
+						</div>
+						<div class="reviews-control"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contacts" id="contacts">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<h3 class="contacts__ttl">Контакты</h3>
+						<p class="contacts__txt">Получить стоимость услуги или з/ч Вы можете всегда в нашем сервисном центре в рабочие часы</p>
+						<a href="#privat-modal" class="contacts-item privat fancybox">
+							<span>Оплата частями от ПриватБанк*</span>
+						</a>
+						<a href="#discont-modal" class="contacts-item discont fancybox">
+							Накопительная дисконтная программа для постоянных клиентов*
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-4">
+						<h4 class="contacts__subttl">Время работы:</h4>
+						<p class="contacts__time">Пн.- Пт. 8.30 - 19.30<br>Сб. 8.30 - 18.00<br>Вс. 8.30 – 16.00</p>
+						<h4 class="contacts__subttl">Телефоны:</h4>
+						<a href="tel:+380536776676" class="contacts__phone">0536776676</a>
+						<a href="tel:+380674000176" class="contacts__phone last">0674000176</a>
+						<a href="tel:+380536777858" class="contacts__phone">0536777858 факс</a>
+						<h4 class="contacts__subttl">Где мы находимся:</h4>
+						<p class="contacts__addr">г. Кременкук,<br>ул. Киевская 75</p>
+						<div class="contacts-soc">
+							<a href="https://www.facebook.com/skodakremen/" target="_blank" class="contacts-soc__link">
+								<img src="img/facebook.svg" alt="skoda">
+							</a>
+							<a href="https://instagram.com/avtocenter_skoda" target="_blank" class="contacts-soc__link">
+								<img src="img/instagram.svg" alt="skoda">
+							</a>
+							<a href="https://www.youtube.com/channel/UC6Rz_oHbibjHzVK4v8cSUwQ/" target="_blank" class="contacts-soc__link">
+								<img src="img/yotube.svg" alt="skoda">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-5 col-sm-8">
+						<div id="map" class="map"></div>
+					</div>
+				</div>
+				<div class="row align-items-center mt40">
+					<div class="col-sm-6">
+						<img src="img/logo.png" alt="skoda" class="contacts__logo">
+					</div>
+					<div class="col-sm-6">
+						<a href="https://wamp.com.ua/" target="_blank" class="dev">
+							<span>Разработано командой:</span>
+							<img src="img/dev-logo.png" alt="wamp">
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
+
+	<div class="d-none">
+		<div id="about-modal" class="modal-about">
+			<div class="modal-about__img">
+				<img src="img/modal_about.jpg" alt="skoda" class="img-r">
+			</div>
+			<form action="mail.php" class="modal-about-form form_check" autocomplete="flase">
+				<input type="hidden" name="title" value="Получить консультацию">
+				<h3 class="modal-about-form__ttl">Оставьте заявку и наш менеджер предоставит всю информацию</h3>
+				<div class="rline">
+					<input type="text" name="name" class="modal-about-form__input" placeholder="Имя:">
+				</div>
+				<div class="rline">
+					<input type="text" name="phone" class="rfield phonefield modal-about-form__input" placeholder="Телефон:">
+				</div>
+				<button type="submit" class="btnsubmit modal-about-form__btn">Получить консультацию</button>
+			</form>
+		</div>
+
+		<div id="business-modal" class="modal-business">
+			<div class="row align-items-center">
+				<div class="col-md-8">
+					<div class="modal-business__img">
+						<img src="img/business_about.jpg" alt="skoda" class="img-r">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<form action="mail.php" class="modal-business-form form_check" autocomplete="flase">
+						<input type="hidden" name="title" value="Получения корпоративных бонусов">
+						<h3 class="modal-business-form__ttl">Мы предоставляем лучшие условия для бизнеса!</h3>
+						<p class="modal-business-form__txt">Оставьте заявку для получения корпоративных бонусов.</p>
+						<div class="rline">
+							<input type="text" name="name" class="modal-business-form__input" placeholder="Имя:">
+						</div>
+						<div class="rline">
+							<input type="text" name="phone" class="rfield phonefield modal-business-form__input" placeholder="Телефон:">
+						</div>
+						<button type="submit" class="btnsubmit modal-business-form__btn">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div id="service-modal" class="modal-service">
+			<div class="row align-items-center">
+				<div class="col-md-8">
+					<h3 class="modal-service__ttl">Узнать стоимость работ, либо записаться, можно оставив заявку:</h3>
+					<ul class="modal-service-list">
+						<li class="modal-service-list__item">Компьютерная диагностика автомобиля</li>
+						<li class="modal-service-list__item">Диагностика тормозной системы</li>
+						<li class="modal-service-list__item">Диагностика рулевого управления</li>
+						<li class="modal-service-list__item">Замена ремня / цепи ГРМ роликов и приводных ремней</li>
+						<li class="modal-service-list__item">Замена свечей двигателя внутреннего сгорания</li>
+						<li class="modal-service-list__item">Проверка аккумуляторной батареи</li>
+						<li class="modal-service-list__item">Проверка электрооборудования и доп. оборудования</li>
+						<li class="modal-service-list__item">Чистка форсунок омывателя</li>
+						<li class="modal-service-list__item">Замена масла в двигателе</li>
+						<li class="modal-service-list__item">Замена масла в АКПП, КПП</li>
+						<li class="modal-service-list__item">Замена воздушного фильтра</li>
+						<li class="modal-service-list__item">Замена топливного фильтра</li>
+						<li class="modal-service-list__item">Замена фильтра салона</li>
+						<li class="modal-service-list__item">Проверка и осмотр днища автомобиля и выхлопной системы</li>
+						<li class="modal-service-list__item">Проверка давления в шинах</li>
+					</ul>
+					<form action="mail.php" class="modal-service-form form_check" autocomplete="flase">
+						<input type="hidden" name="title" value="Получения корпоративных бонусов">
+						<div class="rline">
+							<select name="service" class="modal-service-form__input">
+								<option selected disabled hidden>Услуга</option>
+								<option value="ТО автомобиля">ТО автомобиля</option>
+								<option value="Диагностика и ремонт выхлопной системы">Диагностика и ремонт выхлопной системы</option>
+								<option value="Диагностика и обслуживание трансмиссии">Диагностика и обслуживание трансмиссии</option>
+								<option value="Диагностика и ремонт тормозной системы">Диагностика и ремонт тормозной системы</option>
+								<option value="Диагностика и ремонт ходовой системы">Диагностика и ремонт ходовой системы</option>
+								<option value="Диагностика и ремонт рулевой системы">Диагностика и ремонт рулевой системы</option>
+								<option value="Ремонт и чистка автокондиционеров">Ремонт и чистка автокондиционеров</option>
+								<option value="Диагностика и ремонт двигателя">Диагностика и ремонт двигателя</option>
+							</select>
+						</div>
+						<div class="rline">
+							<input type="text" name="name" class="modal-service-form__input" placeholder="Имя:">
+						</div>
+						<div class="rline">
+							<input type="text" name="phone" class="rfield phonefield modal-service-form__input" placeholder="Телефон:">
+						</div>
+						<button type="submit" class="btnsubmit modal-service-form__btn">Отправить</button>
+					</form>
+					
+				</div>
+				<div class="col-md-4">
+					<div class="modal-service__img">
+						<img src="img/services_about.jpg" alt="skoda" class="img-r">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="privat-modal" class="modal-info">
+			Переваги «оплати частинами»:<br>Вигідні умови. Економія на комісії за розстрочкою, лише 0,01%<br>Не потрібні документи. Для оформлення Вам не знадобляться паспорт, ІПН, довідка про доходи. Усе, що потрібно, – це картка ПриватБанку.<br>Миттєве оформлення Купуйте товари в розстрочку за 30 секунд.<br>Кожен клієнт офіційного сертифікованого дилера Автоцентр Кременчук має можливість отримати розстрочку строком на 3 місяці.
+		</div>
+
+		<div id="discont-modal" class="modal-info">
+			Програма включає наступні послуги:<br>При зверненні до цілодобової гарячої лінії ŠKODA за телефоном 0 800 500 023 Ви отримуєте кваліфіковану консультацію для можливого самостійного усунення несправностей в автомобілі. <br>У разі неможливості усунення несправності за допомогою технічної консультації Вам буде максимально швидко організована допомога на місце поломки.<br>Послуги евакуації надаються при серйозних несправностях, коли Ваш автомобіль нерухомий. В такомувипадку автомобіль буде транспортований до найближчого офіційного сервісного центру ŠKODA безкоштовно в рамках встановленого ліміту. Евакуація автомобілів, що постраждали в ДТП, а так само післягарантійних автомобілів оплачується власниками самостійно.
+		</div>
+	</div>
+
 
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcKXBKsIMkew7SppGI1p-MKSBteq60bBY"></script>
+	<script>
+		google.maps.event.addDomListener(window, 'load', init);
+		function init() {
+			var mapOptions = {
+				zoom: 14,
+				scrollwheel: true,
+				scaleControl: false,
+				draggable: true,
+				streetViewControl: false,
+				mapTypeControl: false,
+				center: new google.maps.LatLng(49.1055095,33.4070733)
+			};
+			var mapElement = document.getElementById('map');
+			var map = new google.maps.Map(mapElement, mapOptions);
+			var marker = new google.maps.Marker({
+				position: new google.maps.LatLng(49.1055095,33.4070733),
+				map: map,
+			});
+		}
+	</script>
 
 </body>
 </html>

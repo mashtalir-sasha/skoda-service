@@ -48,4 +48,1768 @@ button
 .content
 	overflow-x: hidden
 
+.nav
+	padding: 25px 0
+	background-color: #000
+	position: fixed
+	width: 100%
+	top: 0
+	left: 0
+	z-index: 10
+	&-list
+		padding-left: 0
+		margin-bottom: 0
+		list-style-type: none
+		&__item
+			display: inline-block
+			a
+				color: #fff
+				margin-right: 26px
+				padding: 15px 0
+				position: relative
+				&:before
+					content: ''
+					width: 0
+					height: 3px
+					background-color: $accent
+					position: absolute
+					top: 0
+					left: 0
+					transition: all ease .3s
+				&:hover
+					&:before
+						width: 30px
+			&:last-child
+				a
+					margin-right: 0
+	&-phone
+		display: table
+		float: left
+		letter-spacing: 0.05em
+		color: #fff
+		background-color: $accent
+		padding: 10px 12px
+		border-radius: 5px
+		transition: all ease .3s
+		&:hover
+			background-color: #069F2C
+			color: #fff
+			transition: all ease .3s
+	&-lang
+		display: table
+		float: right
+		position: relative
+		background-color: #868686
+		padding: 10px 40px 10px 10px
+		border-radius: 5px
+		color: #fff
+		cursor: pointer
+		&:before
+			content: ''
+			width: 30px
+			height: 100%
+			background: url(../img/nav_lang.svg) center center no-repeat #313131
+			background-size: 14px 7px
+			position: absolute
+			right: 0
+			top: 0
+			border-top-right-radius: 5px
+			border-bottom-right-radius: 5px
+		&__select
+			display: block
+			cursor: pointer
+			width: 100%
+			padding: 10px
+			opacity: 0
+			height: 0
+			position: absolute
+			top: 43px
+			right: 0
+			background-color: #fff
+			color: #000
+			overflow: hidden
+			transition: all ease .3s
+			&.active
+				height: 100%
+				opacity: 1
+				transition: all ease .3s
+
+.head
+	position: relative
+	margin-top: 99px
+	height: calc(100vh - 99px)
+	min-height: 525px
+	background-color: #000
+	&:before
+		content: ''
+		width: 750px
+		height: 200px
+		background-image: url(../img/head_pattern.svg)
+		background-size: cover
+		position: absolute
+		bottom: 60px
+		left: 50px
+		z-index: 2
+	&-flex
+		display: flex
+		height: calc(100vh - 99px)
+		min-height: 525px
+		&__content
+			margin: auto
+	&-slider
+		&__slide
+			background-color: #000
+			outline: none
+			position: relative
+	&-bg
+		background-size: cover
+		width: calc(100% - 50px)
+		height: calc(100% - 90px)
+		position: absolute
+		top: 0
+		right: 0
+		z-index: -1
+		&:before
+			content: ''
+			width: 100%
+			height: 100%
+			background: linear-gradient(47.49deg, rgba(0, 0, 0, 0) 33.05%, rgba(0, 0, 0, 0.63) 59.61%)
+			transform: rotate(-180deg)
+			position: absolute
+			top: 0
+			left: 0
+	&-title
+		position: relative
+		max-width: 740px
+		padding: 40px 20px
+		border: 1px solid #F5FDF7
+		border-left: none
+		border-right: none
+		&__ttl
+			position: relative
+			font-family: $bold
+			font-size: 36px
+			color: #fff
+			text-transform: uppercase
+			padding-bottom: 20px
+			margin-bottom: 20px
+			span
+				color: $accent
+			&:after
+				content: ''
+				width: 270px
+				height: 2px
+				background-color: #fff
+				position: absolute
+				bottom: 2px
+				left: 0
+		&__txt
+			font-size: 20px
+			color: #fff
+		&__top
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			&:before
+				content: ''
+				width: 1px
+				height: 40px
+				background-color: #F5FDF7
+				position: absolute
+				left: 0
+				top: 0
+			&:after
+				content: ''
+				width: 1px
+				height: 40px
+				background-color: #F5FDF7
+				position: absolute
+				right: 0
+				top: 0
+		&__bottom
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			&:before
+				content: ''
+				width: 1px
+				height: 40px
+				background-color: #F5FDF7
+				position: absolute
+				left: 0
+				bottom: 0
+			&:after
+				content: ''
+				width: 1px
+				height: 40px
+				background-color: #F5FDF7
+				position: absolute
+				right: 0
+				bottom: 0
+	&-form
+		max-width: 390px
+		position: relative
+		padding: 30px 30px 50px 50px
+		background-color: rgba(#000, .6)
+		&:before
+			content: ''
+			width: 100%
+			height: 100%
+			border: 1px solid #F5FDF7
+			position: absolute
+			top: -25px
+			left: 25px
+		&__ttl
+			position: relative
+			z-index: 1
+			font-family: $bold
+			font-size: 24px
+			color: #fff
+			text-transform: uppercase
+			letter-spacing: 0.03em
+			margin-bottom: 20px
+		.rline
+			position: relative
+			z-index: 1
+			display: table
+			position: relative
+			margin-bottom: 20px
+		.rfield_error
+			position: absolute
+			top: 2px
+			right: 10px
+			font-size: 12px
+			color: red
+			visibility: hidden
+		&__input
+			width: 280px
+			text-align: center
+			background-color: #F3F3F3
+			border: none
+			border-radius: 5px
+			padding: 14px 20px
+		&__btn
+			position: relative
+			z-index: 1
+			cursor: pointer
+			width: 280px
+			padding: 14px 0
+			border-radius: 5px
+			font-family: $bold
+			color: #fff
+			font-size: 20px
+			text-align: center
+			background: linear-gradient(180deg, #07A22D 0%, #05B847 96.15%)
+			letter-spacing: 0.05em
+			&:hover
+				background: $accent
+	&-control
+		position: relative
+		margin: -55px auto 0
+		display: table
+		z-index: 2
+		.slick-dots
+			display: table
+			margin: 0 auto
+			padding: 0 80px
+			list-style-type: none
+			li
+				display: inline-block
+				font-size: 0
+				width: 50px
+				height: 3px
+				margin: 0 5px
+				background-color: #C4C4C4
+				&.slick-active
+					background-color: $accent
+		.slick-arrow
+			width: 56px
+			height: 56px
+			font-size: 0
+			background-color: #B6B4B4
+			border-radius: 5px
+			position: absolute
+			top: -16px
+			transition: all ease .3s
+			&:before
+				content: ''
+				width: 17px
+				height: 30px
+				background-size: 17px 30px
+				background-position: center center
+				background-repeat: no-repeat
+				position: absolute
+				top: 13px
+				left: 19px
+			&.slick-prev
+				left: 0
+				&:before
+					background-image: url(../img/head_slide_prev.svg)
+			&.slick-next
+				right: 0
+				&:before
+					background-image: url(../img/head_slide_next.svg)
+			&:hover
+				transition: all ease .3s
+				background: linear-gradient(180deg, #069F2C 0%, #05B847 96.15%), $accent
+
+.advantages
+	position: relative
+	padding: 100px 0 30px
+	&:before
+		content: ''
+		width: 229px
+		height: 501px
+		background-image: url(../img/advantages_pattern1.png)
+		position: absolute
+		top: 50%
+		margin-top: -250px
+		left: 0
+		z-index: -1
+	&:after
+		content: ''
+		width: 815px
+		height: 713px
+		background-image: url(../img/advantages_pattern2.png)
+		position: absolute
+		top: 0
+		right: 0
+		z-index: -1
+	&__ttl
+		position: relative
+		font-family: $bold
+		font-size: 32px
+		color: #000
+		text-transform: uppercase
+		padding-bottom: 20px
+		&:after
+			content: ''
+			width: 270px
+			height: 2px
+			background-color: #3D3C3C
+			position: absolute
+			bottom: 2px
+			left: 0
+	&-item
+		position: relative
+		float: left
+		max-width: 220px
+		padding: 20px
+		margin: 0 13px 20px
+		&_black
+			background-color: #000
+			.advantages-item__txt
+				&:before
+					background-color: #A8BED6
+		&_grey
+			background-color: #F2F2F2
+			.advantages-item__txt
+				color: #161616
+				&:before
+					background-color: $accent
+		&__numb
+			font-family: $light
+			font-size: 120px
+			line-height: 1
+			color: rgba(#9E9D9D, .33)
+			position: absolute
+			right: 20px
+			top: 50%
+			margin-top: -60px
+		&__ico
+			position: relative
+			z-index: 1
+			margin: 0 auto 20px
+			width: 60px
+			height: 60px
+			background-size: contain
+			background-position: center center
+			background-repeat: no-repeat
+			&_i1
+				background-image: url(../img/advantages1.svg)
+			&_i2
+				background-image: url(../img/advantages2.svg)
+			&_i3
+				background-image: url(../img/advantages3.svg)
+			&_i4
+				background-image: url(../img/advantages4.svg)
+			&_i5
+				background-image: url(../img/advantages5.png)
+			&_i6
+				background-image: url(../img/advantages6.svg)
+			&_i7
+				background-image: url(../img/advantages7.svg)
+			&_i8
+				background-image: url(../img/advantages8.svg)
+			&_i9
+				background-image: url(../img/advantages9.svg)
+		&__txt
+			position: relative
+			z-index: 1
+			color: #fff
+			padding-top: 20px
+			&:before
+				content: ''
+				width: 56px
+				height: 4px
+				position: absolute
+				top: 0
+				left: 50%
+				margin-left: -28px
+			span
+				font-family: $bold
+				text-transform: uppercase
+
+.services
+	position: relative
+	padding: 50px 0
+	&:before
+		content: ''
+		width: 100%
+		height: 100%
+		background-image: url(../img/services_bg.png)
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+		position: absolute
+		top: 0
+		left: 0
+	&__ttl
+		position: relative
+		font-family: $bold
+		font-size: 36px
+		color: #000
+		text-transform: uppercase
+		padding-bottom: 20px
+		margin-bottom: 40px
+		&:after
+			content: ''
+			width: 270px
+			height: 2px
+			background-color: #3D3C3C
+			position: absolute
+			bottom: 2px
+			left: 0
+	&-item
+		width: 100%
+		height: 290px
+		position: relative
+		padding: 30px
+		margin-bottom: 40px
+		background-size: cover
+		background-position: center center
+		background-repeat: no-repeat
+		transition: all ease .3s
+		&:hover
+			transition: all ease .3s
+			transform: scale(1.2)
+			z-index: 2
+			box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2)
+		&_i1
+			background-image: url(../img/services1.jpg)
+		&_i2
+			background-image: url(../img/services2.jpg)
+		&_i3
+			background-image: url(../img/services3.jpg)
+		&_i4
+			background-image: url(../img/services4.jpg)
+		&_i5
+			background-image: url(../img/services5.jpg)
+		&_i6
+			background-image: url(../img/services6.jpg)
+		&_i7
+			background-image: url(../img/services7.jpg)
+		&_i8
+			background-image: url(../img/services8.jpg)
+		&:before
+			content: ''
+			width: 100%
+			height: 100%
+			background-color: rgba(#000, .5)
+			position: absolute
+			top: 0
+			left: 0
+		&__ttl
+			position: absolute
+			left: 30px
+			bottom: 30px
+			z-index: 1
+			font-family: $bold
+			font-size: 24px
+			line-height: 1.2
+			color: #fff
+			padding-right: 30px
+		&__btn
+			display: table
+			position: relative
+			z-index: 1
+			cursor: pointer
+			padding: 14px 60px
+			margin: 0 auto 40px
+			border-radius: 5px
+			color: #fff
+			font-size: 16px
+			text-align: center
+			background: linear-gradient(180deg, #07A22D 0%, #05B847 96.15%)
+			letter-spacing: 0.05em
+			transition: all ease .3s
+			&:hover
+				color: #fff
+				background: $accent
+
+.about
+	position: relative
+	padding-bottom: 50px
+	&:before
+		content: ''
+		width: 815px
+		height: 713px
+		background-image: url(../img/about_pattern2.png)
+		background-size: cover
+		position: absolute
+		right: 0
+		bottom: 0
+		z-index: -1
+	&:after
+		content: ''
+		width: 352px
+		height: 935px
+		background-image: url(../img/about_pattern1.png)
+		background-size: cover
+		position: absolute
+		left: 0
+		bottom: -265px
+		z-index: -1
+	&__ttl
+		position: relative
+		font-family: $bold
+		font-size: 36px
+		color: #000
+		text-transform: uppercase
+		padding-bottom: 20px
+		margin-bottom: 40px
+		&:after
+			content: ''
+			width: 270px
+			height: 2px
+			background-color: #3D3C3C
+			position: absolute
+			bottom: 2px
+			left: 0
+	&__subttl
+		font-family: $bold
+		font-size: 18px
+		margin-bottom: 40px
+	&__txt
+		margin-bottom: 20px
+		&.last
+			position: relative
+			padding-bottom: 20px
+			&:before
+				content: ''
+				width: 100%
+				max-width: 420px
+				height: 3px
+				background-color: #4D4D4D
+				position: absolute
+				bottom: 0
+				left: 0
+	&__btn
+		display: table
+		position: relative
+		z-index: 1
+		cursor: pointer
+		padding: 14px 60px
+		border-radius: 5px
+		color: #fff
+		font-size: 16px
+		text-align: center
+		background: linear-gradient(180deg, #07A22D 0%, #05B847 96.15%)
+		letter-spacing: 0.05em
+		transition: all ease .3s
+		&:hover
+			color: #fff
+			background: $accent
+			transition: all ease .3s
+	&-slider
+		padding: 0 80px
+		margin-top: 40px
+		.slick-arrow
+			width: 56px
+			height: 56px
+			font-size: 0
+			background-color: #151414
+			border-radius: 5px
+			position: absolute
+			top: 50%
+			margin-top: -28px
+			transition: all ease .3s
+			&:before
+				content: ''
+				width: 17px
+				height: 30px
+				background-size: 17px 30px
+				background-position: center center
+				background-repeat: no-repeat
+				position: absolute
+				top: 13px
+				left: 19px
+			&.slick-prev
+				left: 0
+				&:before
+					background-image: url(../img/head_slide_prev.svg)
+			&.slick-next
+				right: 0
+				&:before
+					background-image: url(../img/head_slide_next.svg)
+			&:hover
+				transition: all ease .3s
+				background: linear-gradient(180deg, #069F2C 0%, #05B847 96.15%), $accent
+		img
+			margin: 0 10px
+			outline: none
+			&:nth-child(2n)
+				margin-top: 40px
+
+.diagnostics
+	padding: 50px 0
+	.container
+		padding: 40px 0
+		background-color: #000
+		position: relative
+		&:before
+			content: ''
+			width: calc(100% - 80px)
+			height: calc(100% - 80px)
+			border: 1px solid #F5FDF7
+			position: absolute
+			top: 40px
+			left: 40px
+	&__ttl
+		position: relative
+		font-family: $bold
+		font-size: 32px
+		color: #fff
+		text-transform: uppercase
+		padding-bottom: 20px
+		margin-bottom: 20px
+		margin-top: 20px
+		span
+			color: $accent
+		&:after
+			content: ''
+			width: 270px
+			height: 2px
+			background-color: #fff
+			position: absolute
+			bottom: 2px
+			left: 0
+	&__txt
+		color: #fff
+		margin-bottom: 20px
+	&__img
+		position: absolute
+		top: 40px
+		right: 40px
+	&-form
+		.rline
+			position: relative
+			z-index: 1
+			display: table
+			position: relative
+			float: left
+			margin: 20px
+		.rfield_error
+			position: absolute
+			top: 2px
+			right: 10px
+			font-size: 12px
+			color: red
+			visibility: hidden
+		&__input
+			width: 235px
+			text-align: center
+			background-color: #F3F3F3
+			border: none
+			border-radius: 5px
+			padding: 14px 20px
+		&__btn
+			position: relative
+			float: left
+			z-index: 1
+			cursor: pointer
+			width: 235px
+			padding: 14px 0
+			margin: 20px
+			border-radius: 5px
+			font-family: $bold
+			color: #fff
+			font-size: 20px
+			text-align: center
+			background: linear-gradient(180deg, #07A22D 0%, #05B847 96.15%)
+			letter-spacing: 0.05em
+			&:hover
+				background: $accent
+
+.sale
+	padding: 50px 0
+	position: relative
+	&:before
+		content: ''
+		width: 100%
+		height: 100%
+		background-image: url(../img/sale_bg.png)
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+		position: absolute
+		top: 0
+		left: 0
+	&__ttl
+		position: relative
+		font-family: $bold
+		font-size: 32px
+		color: #000
+		text-transform: uppercase
+		padding-bottom: 20px
+		margin-bottom: 20px
+		margin-top: 20px
+		&:after
+			content: ''
+			width: 270px
+			height: 2px
+			background-color: #3D3C3C
+			position: absolute
+			bottom: 2px
+			left: 0
+	&__txt
+		max-width: 550px
+		margin-bottom: 20px
+		&:last-child
+			margin-bottom: 0
+		span
+			font-family: $bold
+	&__img
+		position: absolute
+		right: -50px
+		top: -100px
+	&__bg
+		position: relative
+		margin-left: -8.33333%
+		margin-top: -50px
+		z-index: 2
+	&-form
+		max-width: 520px
+		float: right
+		background-color: #090909
+		padding: 60px
+		position: relative
+		&:before
+			content: ''
+			width: calc(100% - 80px)
+			height: calc(100% - 80px)
+			border: 1px solid #F5FDF7
+			position: absolute
+			top: 40px
+			left: 40px
+		&__ttl
+			position: relative
+			font-family: $bold
+			font-size: 22px
+			text-transform: uppercase
+			color: #fff
+			margin-bottom: 20px
+			padding-bottom: 20px
+			span
+				color: $accent
+			&:after
+				content: ''
+				width: 270px
+				height: 2px
+				background-color: #fff
+				position: absolute
+				bottom: 2px
+				left: 0
+		.rline
+			position: relative
+			z-index: 1
+			display: table
+			position: relative
+			margin: 0 auto 20px
+		.rfield_error
+			position: absolute
+			top: 2px
+			right: 10px
+			font-size: 12px
+			color: red
+			visibility: hidden
+		&__input
+			width: 235px
+			text-align: center
+			background-color: #F3F3F3
+			border: none
+			border-radius: 5px
+			padding: 14px 20px
+		&__btn
+			display: block
+			position: relative
+			z-index: 1
+			cursor: pointer
+			width: 235px
+			padding: 14px 0
+			margin: 0 auto
+			border-radius: 5px
+			font-family: $bold
+			color: #fff
+			font-size: 20px
+			text-align: center
+			background: linear-gradient(180deg, #07A22D 0%, #05B847 96.15%)
+			letter-spacing: 0.05em
+			&:hover
+				background: $accent
+
+.business
+	padding: 0 0 30px
+	position: relative
+	&:before
+		content: ''
+		width: 540px
+		height: 1081px
+		background-image: url(../img/business_pattern2.png)
+		background-size: cover
+		background-repeat: no-repeat
+		position: absolute
+		right: 0
+		bottom: -200px
+	&__ttl
+		position: relative
+		font-family: $bold
+		font-size: 32px
+		color: #000
+		text-transform: uppercase
+		padding-bottom: 20px
+		margin-bottom: 20px
+		margin-top: 20px
+		&:after
+			content: ''
+			width: 270px
+			height: 2px
+			background-color: #3D3C3C
+			position: absolute
+			bottom: 2px
+			left: 0
+	&-item
+		position: relative
+		width: 100%
+		height: 260px
+		background-position: center center
+		background-size: cover
+		background-repeat: no-repeat
+		margin-bottom: 20px
+		&_i1
+			background-image: url(../img/business1.jpg)
+		&_i2
+			background-image: url(../img/business2.jpg)
+		&_i3
+			background-image: url(../img/business3.jpg)
+		&_i4
+			background-image: url(../img/business4.jpg)
+		&__ttl
+			width: 100%
+			padding: 20px
+			background: rgba(#2B2828, 0.55)
+			font-family: $bold
+			font-size: 22px
+			color: #fff
+			position: absolute
+			bottom: 0
+			left: 0
+			&_right
+				text-align: right
+	&__btn
+		display: block
+		position: relative
+		z-index: 1
+		cursor: pointer
+		width: 235px
+		padding: 14px 0
+		margin: 0 auto
+		border-radius: 5px
+		color: #fff
+		font-size: 18px
+		text-align: center
+		background: linear-gradient(180deg, #07A22D 0%, #05B847 96.15%)
+		letter-spacing: 0.05em
+		&:hover
+			color: #fff
+			background: $accent
+	.row
+		position: relative
+	&__img
+		position: absolute
+		top: -75px
+		left: 0
+
+.washing
+	padding: 50px 0
+	&-block
+		position: relative
+		z-index: 1
+		padding: 60px
+		background-color: #0B0B0B
+		margin-bottom: 100px
+		&:before
+			content: ''
+			width: calc(100% - 80px)
+			height: calc(100% - 80px)
+			border: 1px solid #F5FDF7
+			position: absolute
+			top: 40px
+			left: 40px
+		&__ttl
+			position: relative
+			font-family: $bold
+			font-size: 32px
+			color: #fff
+			text-transform: uppercase
+			margin-bottom: 20px
+			padding-bottom: 20px
+			&:after
+				content: ''
+				width: 270px
+				height: 2px
+				background-color: #fff
+				position: absolute
+				bottom: 2px
+				left: 0
+		&__txt
+			color: #fff
+			&:last-child
+				margin-top: 20px
+		&__img
+			position: absolute
+			right: 10px
+			top: 110px
+	.container
+		position: relative
+	&__bg
+		position: absolute
+		bottom: 0
+		right: 0
+
+.equipment
+	position: relative
+	padding: 50px 0 30px
+	&:before
+		content: ''
+		width: 100%
+		height: 100%
+		background-image: url(../img/equipment_bg.png)
+		background-size: cover
+		background-position: center center
+		background-repeat: no-repeat
+		position: absolute
+		top: 0
+		left: 0
+	&__ttl
+		position: relative
+		font-family: $bold
+		font-size: 32px
+		color: #000
+		text-transform: uppercase
+		margin-bottom: 20px
+		padding-bottom: 20px
+		&:after
+			content: ''
+			width: 270px
+			height: 2px
+			background-color: #3D3C3C
+			position: absolute
+			bottom: 2px
+			left: 0
+	&__txt
+		font-size: 20px
+	&__img
+		margin-bottom: 20px
+	&-item
+		position: relative
+		padding: 20px
+		margin-bottom: 20px
+		&_black
+			background-color: #000
+			.equipment-item__txt
+				&:before
+					background-color: #9FA0A0
+		&_grey
+			background-color: #EEEDED
+			.equipment-item__txt
+				color: #161616
+				&:before
+					background-color: $accent
+		&__numb
+			font-family: $light
+			font-size: 120px
+			line-height: 1
+			color: rgba(#9E9D9D, .33)
+			position: absolute
+			right: 20px
+			top: 50%
+			margin-top: -60px
+		&__ico
+			position: relative
+			z-index: 1
+			margin: 0 auto 20px
+			width: 60px
+			height: 60px
+			background-size: contain
+			background-position: center center
+			background-repeat: no-repeat
+			&_i1
+				background-image: url(../img/equipment_ico1.svg)
+			&_i2
+				background-image: url(../img/equipment_ico2.svg)
+			&_i3
+				background-image: url(../img/equipment_ico3.svg)
+			&_i4
+				background-image: url(../img/equipment_ico4.svg)
+			&_i5
+				background-image: url(../img/equipment_ico5.svg)
+			&_i6
+				background-image: url(../img/equipment_ico6.svg)
+			&_i7
+				background-image: url(../img/equipment_ico7.svg)
+			&_i8
+				background-image: url(../img/equipment_ico8.svg)
+		&__txt
+			position: relative
+			z-index: 1
+			color: #fff
+			padding-top: 20px
+			&:before
+				content: ''
+				width: 56px
+				height: 4px
+				position: absolute
+				top: 0
+				left: 50%
+				margin-left: -28px
+			span
+				font-family: $bold
+				text-transform: uppercase
+	&__btn
+		display: block
+		position: relative
+		z-index: 1
+		cursor: pointer
+		width: 235px
+		padding: 14px 0
+		margin: 0 auto
+		border-radius: 5px
+		color: #fff
+		font-size: 18px
+		text-align: center
+		background: linear-gradient(180deg, #07A22D 0%, #05B847 96.15%)
+		letter-spacing: 0.05em
+		&:hover
+			color: #fff
+			background: $accent
+
+.works
+	position: relative
+	padding: 50px 0
+	margin: 50px 0
+	background-color: #000
+	&:before
+		content: ''
+		width: 100%
+		height: 100%
+		background-image: url(../img/works_pattern.png)
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		position: absolute
+		top: 0
+		left: 0
+	&__ttl
+		position: relative
+		font-family: $bold
+		font-size: 32px
+		color: #fff
+		text-transform: uppercase
+		margin-bottom: 20px
+		padding-bottom: 20px
+		&:after
+			content: ''
+			width: 270px
+			height: 2px
+			background-color: #fff
+			position: absolute
+			bottom: 2px
+			left: 0
+	&-slider
+		&__slide
+			outline: none
+			margin: 0 20px
+			&:nth-child(2n)
+				margin-top: 100px
+	&-item
+		&__numb
+			position: relative
+			font-family: $light
+			font-size: 120px
+			line-height: 1
+			color: rgba(#A0A0A0, .37)
+			padding-left: 65px
+			&:before
+				content: ''
+				width: 65px
+				height: 4px
+				background-color: $accent
+				position: absolute
+				left: 0
+				bottom: 40px
+		&__img
+			margin-bottom: 20px
+		&__txt
+			color: #fff
+			position: relative
+			padding-bottom: 20px
+			&:before
+				content: ''
+				width: 340px
+				height: 3px
+				background-color: #fff
+				position: absolute
+				bottom: 0
+				left: 0
+	&-control
+		position: relative
+		margin: 40px auto
+		display: table
+		z-index: 2
+		.slick-dots
+			display: table
+			margin: 0 auto
+			padding: 0 80px
+			list-style-type: none
+			li
+				display: inline-block
+				font-size: 0
+				width: 50px
+				height: 3px
+				margin: 0 5px
+				background-color: #C4C4C4
+				&.slick-active
+					background-color: $accent
+		.slick-arrow
+			width: 56px
+			height: 56px
+			font-size: 0
+			background-color: #B6B4B4
+			border-radius: 5px
+			position: absolute
+			top: -16px
+			transition: all ease .3s
+			&:before
+				content: ''
+				width: 17px
+				height: 30px
+				background-size: 17px 30px
+				background-position: center center
+				background-repeat: no-repeat
+				position: absolute
+				top: 13px
+				left: 19px
+			&.slick-prev
+				left: 0
+				&:before
+					background-image: url(../img/head_slide_prev.svg)
+			&.slick-next
+				right: 0
+				&:before
+					background-image: url(../img/head_slide_next.svg)
+			&:hover
+				transition: all ease .3s
+				background: linear-gradient(180deg, #069F2C 0%, #05B847 96.15%), $accent
+
+.clients
+	position: relative
+	padding: 120px 0 50px
+	&:before
+		content: ''
+		width: 353px
+		height: 1045px
+		background-image: url(../img/clients_pattern.png)
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+		position: absolute
+		right: 0
+		top: 0
+	&-block
+		position: relative
+		display: table
+		&:before
+			content: ''
+			width: 100%
+			height: 100%
+			background-color: $accent
+			position: absolute
+			right: -80px
+			top: -80px
+			z-index: -1
+	&__ttl
+		position: absolute
+		top: -75px
+		left: 100px
+		font-family: $bold
+		font-size: 32px
+		color: #000
+		text-transform: uppercase
+		padding: 50px
+		background-color: #fff
+		&:after
+			content: ''
+			width: 270px
+			height: 2px
+			background-color: #303030
+			position: absolute
+			bottom: 32px
+			left: 30px
+	&-item
+		min-width: 320px
+		position: absolute
+		bottom: 100px
+		right: -80px
+		padding: 30px
+		background-color: #fff
+		&__img
+			display: block
+			margin-bottom: 10px
+			&:last-child
+				margin-bottom: 0
+	&__logo
+		display: inline-block
+		margin: 0 12px
+
+.reviews
+	position: relative
+	padding: 50px 0
+	&__ttl
+		position: relative
+		font-family: $bold
+		font-size: 32px
+		color: #000
+		text-transform: uppercase
+		margin-bottom: 20px
+		padding-bottom: 20px
+		&:after
+			content: ''
+			width: 270px
+			height: 2px
+			background-color: #3D3C3C
+			position: absolute
+			bottom: 2px
+			left: 0
+	&-item
+		padding: 30px 20px
+		&_black
+			background-color: #000
+			color: #fff
+			.reviews-item__name
+				&:before
+					background-color: #F7F7F7
+			.reviews-item__txt
+				&:before
+					background-image: url(../img/quotes-left_green.svg)
+				&:after
+					background-image: url(../img/quotes-right_green.svg)
+		&_grey
+			background-color: #E8E8E8
+			color: #000
+			.reviews-item__name
+				&:before
+					background-color: #000
+			.reviews-item__txt
+				&:before
+					background-image: url(../img/quotes-left_gray.svg)
+				&:after
+					background-image: url(../img/quotes-right_gray.svg)
+		&__name
+			font-size: 20px
+			position: relative
+			padding-bottom: 10px
+			margin-bottom: 10px
+			&:before
+				content: ''
+				width: 100%
+				height: 1px
+				position: absolute
+				bottom: 0
+				left: 0
+		&__txt
+			font-size: 14px
+			padding: 0 35px
+			position: relative
+			&:before
+				content: ''
+				width: 28px
+				height: 28px
+				background-size: contain
+				position: absolute
+				top: 0
+				left: 0
+			&:after
+				content: ''
+				width: 28px
+				height: 28px
+				background-size: contain
+				position: absolute
+				bottom: 0
+				right: 0
+	&-slider
+		&__slide
+			outline: none
+			margin: 0 20px
+			&.mt100
+				margin-top: 100px
+	&-control
+		width: 50%
+		position: absolute
+		top: 40px
+		right: 0
+		z-index: 2
+		.slick-dots
+			display: table
+			margin: 0 auto
+			padding: 0 80px
+			list-style-type: none
+			li
+				display: inline-block
+				font-size: 0
+				width: 50px
+				height: 3px
+				margin: 0 5px
+				background-color: #C4C4C4
+				&.slick-active
+					background-color: $accent
+		.slick-arrow
+			width: 56px
+			height: 56px
+			font-size: 0
+			background-color: #B6B4B4
+			border-radius: 5px
+			position: absolute
+			top: -16px
+			transition: all ease .3s
+			&:before
+				content: ''
+				width: 17px
+				height: 30px
+				background-size: 17px 30px
+				background-position: center center
+				background-repeat: no-repeat
+				position: absolute
+				top: 13px
+				left: 19px
+			&.slick-prev
+				left: 0
+				&:before
+					background-image: url(../img/head_slide_prev.svg)
+			&.slick-next
+				right: 0
+				&:before
+					background-image: url(../img/head_slide_next.svg)
+			&:hover
+				transition: all ease .3s
+				background: linear-gradient(180deg, #069F2C 0%, #05B847 96.15%), $accent
+
+.contacts
+	padding: 50px 0
+	margin-top: 50px
+	background-color: #0B0B0B
+	color: #fff
+	&__ttl
+		position: relative
+		font-family: $bold
+		font-size: 32px
+		color: #fff
+		text-transform: uppercase
+		margin-bottom: 20px
+		padding-bottom: 20px
+		&:after
+			content: ''
+			width: 270px
+			height: 2px
+			background-color: #fff
+			position: absolute
+			bottom: 2px
+			left: 0
+	&__txt
+		max-width: 400px
+		color: #E5E5E5
+	&__subttl
+		font-family: $bold
+		margin-bottom: 10px
+	&__time
+		margin-bottom: 20px
+	&__phone
+		display: block
+		color: #fff
+		&.last
+			margin-bottom: 20px
+		&:hover
+			color: #fff
+	&-soc
+		margin-top: 20px
+		&__link
+			margin-right: 10px
+			&:last-child
+				margin-right: 0
+	&-item
+		position: relative
+		display: block
+		min-height: 40px
+		padding-left: 60px
+		background-repeat: no-repeat
+		background-size: 40px 40px
+		background-position: top left
+		font-size: 24px
+		color: #fff
+		margin-bottom: 20px
+		&:hover
+			color: #fff
+		&:last-child
+			margin-bottom: 0
+		&.privat
+			margin-top: 80px
+			padding-bottom: 20px
+			&:before
+				content: ''
+				width: 100%
+				max-width: 300px
+				height: 1px
+				background-color: #fff
+				position: absolute
+				bottom: 0
+				left: 60px
+		span
+			color: $accent
+		&.privat
+			background-image: url(../img/privat.png)
+		&.discont
+			background-image: url(../img/discont.png)
+	.row	
+		&.mt40
+			margin-top: 40px
+
+.map
+	min-height: 380px
+.dev
+	float: right
+	span
+		font-size: 12px
+		color: #fff
+		margin-right: 10px
+	&:hover
+		span
+			color: #fff
+
+.modal
+	&-about
+		background-color: #000
+		padding: 40px
+		&:before
+			content: ''
+			width: 100%
+			height: 100%
+			background-image: url(../img/modal_about__pattern.png)
+			background-size: cover
+			position: absolute
+			top: 0
+			left: 0
+		&__img
+			position: relative
+			z-index: 1
+			&:before
+				content: ''
+				width: 50%
+				height: 100%
+				background-color: $accent
+				position: absolute
+				bottom: -20px
+				left: -20px
+				z-index: -1
+		&-form
+			display: table
+			margin: 0 auto
+			&__ttl
+				font-family: $bold
+				text-transform: uppercase
+				font-size: 26px
+				color: #fff
+				margin: 40px 0
+			.rline
+				position: relative
+				z-index: 1
+				display: table
+				float: left
+				margin: 0 10px
+				position: relative
+				margin-bottom: 20px
+			.rfield_error
+				position: absolute
+				top: 2px
+				right: 10px
+				font-size: 12px
+				color: red
+				visibility: hidden
+			&__input
+				width: 280px
+				text-align: center
+				background-color: #F3F3F3
+				border: none
+				border-radius: 5px
+				padding: 14px 20px
+			&__btn
+				position: relative
+				z-index: 1
+				cursor: pointer
+				width: 280px
+				padding: 11px 0
+				border-radius: 5px
+				font-family: $bold
+				color: #fff
+				font-size: 20px
+				text-align: center
+				background: linear-gradient(180deg, #07A22D 0%, #05B847 96.15%)
+				letter-spacing: 0.05em
+				&:hover
+					background: $accent
+	&-business
+		max-width: 1140px
+		background-color: #000
+		padding: 40px
+		overflow: hidden
+		&:before
+			content: ''
+			width: 310px
+			height: 695px
+			background-image: url(../img/modal_business__pattern.png)
+			background-size: cover
+			background-position: right center
+			position: absolute
+			top: 0
+			right: 0
+		&__img
+			position: relative
+			z-index: 1
+			&:before
+				content: ''
+				width: 50%
+				height: 100%
+				background-color: $accent
+				position: absolute
+				bottom: -20px
+				left: -20px
+				z-index: -1
+		&-form
+			display: table
+			margin: 0 auto
+			&__ttl
+				position: relative
+				padding-bottom: 20px
+				font-family: $bold
+				text-transform: uppercase
+				font-size: 26px
+				color: #fff
+				margin: 40px 0 20px
+				&:after
+					content: ''
+					width: 270px
+					height: 2px
+					background-color: #fff
+					position: absolute
+					bottom: 2px
+					left: 0
+			&__txt
+				color: #E0E2E7
+				margin-bottom: 40px
+			.rline
+				position: relative
+				z-index: 1
+				display: table
+				margin: 0 auto 20px
+				position: relative
+				margin-bottom: 20px
+			.rfield_error
+				position: absolute
+				top: 2px
+				right: 10px
+				font-size: 12px
+				color: red
+				visibility: hidden
+			&__input
+				width: 280px
+				text-align: center
+				background-color: #F3F3F3
+				border: none
+				border-radius: 5px
+				padding: 14px 20px
+			&__btn
+				position: relative
+				z-index: 1
+				cursor: pointer
+				display: block
+				margin: 0 auto 40px
+				width: 280px
+				padding: 11px 0
+				border-radius: 5px
+				font-family: $bold
+				color: #fff
+				font-size: 20px
+				text-align: center
+				background: linear-gradient(180deg, #07A22D 0%, #05B847 96.15%)
+				letter-spacing: 0.05em
+				&:hover
+					background: $accent
+	&-service
+		max-width: 1140px
+		background-color: #000
+		padding: 40px
+		overflow: hidden
+		&:before
+			content: ''
+			width: 100%
+			height: 100%
+			background-image: url(../img/modal_service__pattern.png)
+			background-size: contain
+			background-position: right center
+			background-repeat: no-repeat
+			position: absolute
+			top: 0
+			right: 0
+		&__img
+			position: relative
+			z-index: 1
+			&:before
+				content: ''
+				width: 70%
+				height: 100%
+				background-color: $accent
+				position: absolute
+				bottom: -20px
+				right: -20px
+				z-index: -1
+		&__ttl
+			position: relative
+			padding-bottom: 20px
+			font-family: $bold
+			text-transform: uppercase
+			font-size: 26px
+			color: #fff
+			margin: 40px 0 20px
+			&:before
+				content: ''
+				width: 50px
+				height: 5px
+				background-color: #fff
+				position: absolute
+				bottom: 0
+				left: 0
+				z-index: 1
+			&:after
+				content: ''
+				width: 270px
+				height: 2px
+				background-color: #fff
+				position: absolute
+				bottom: 2px
+				left: 0
+		&-list
+			list-style-type: none
+			margin-bottom: 40px
+			padding-left: 0
+			overflow: hidden
+			&__item
+				position: relative
+				width: 50%
+				float: left
+				color: #fff
+				margin-bottom: 5px
+				padding-left: 25px
+				&:before
+					content: ''
+					width: 15px
+					height: 15px
+					background-color: #4E4D4D
+					border-radius: 50%
+					position: absolute
+					top: 3px
+					left: 0
+		&-form
+			display: table
+			margin: 0 auto
+			.rline
+				position: relative
+				z-index: 1
+				display: table
+				float: left
+				margin: 0 0 20px
+				position: relative
+			.rfield_error
+				position: absolute
+				top: 2px
+				right: 10px
+				font-size: 12px
+				color: red
+				visibility: hidden
+			&__input
+				width: 210px
+				text-align: center
+				background-color: #F3F3F3
+				border: none
+				border-radius: 5px
+				padding: 14px 20px
+				appearance: none
+				margin: 0 10px
+			&__btn
+				position: relative
+				z-index: 1
+				cursor: pointer
+				display: block
+				margin: 0 auto 40px
+				width: 280px
+				padding: 11px 0
+				border-radius: 5px
+				font-family: $bold
+				color: #fff
+				font-size: 20px
+				text-align: center
+				background: linear-gradient(180deg, #07A22D 0%, #05B847 96.15%)
+				letter-spacing: 0.05em
+				&:hover
+					background: $accent
+	&-info
+		max-width: 600px
+		padding: 30px
+		background-color: #000
+		color: #fff
+
+select.modal-service-form__input
+    outline: 0
+    background-image: url(../img/apperanse.svg)
+    background-position: 180px 23px
+    background-size: 15px 8px
+    background-repeat: no-repeat
+
+.fancybox-slide--html .fancybox-close-small
+	background-color: $accent
+	svg
+		fill: #fff
+		path
+			fill: #fff
+
 @import "media" // Always at the end
