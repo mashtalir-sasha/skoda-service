@@ -24,12 +24,13 @@ $(function() {
 		data += '&ajax-request=true';
 		$.ajax({
 			type: 'POST',
-			url: 'mail.php',
+			url: '/mail.php',
 			dataType: 'json',
 			data: data,
 			success: (function() {
 				$.fancybox.close();
-				$.fancybox.open('<div class="thn"><h3>Заявка отправлена!</h3><p>С Вами свяжутся в ближайшее время.</p></div>');
+				$.fancybox.open({src:'#thn'});
+				//$.fancybox.open('<div class="thn"><h3>Заявка отправлена!</h3><p>С Вами свяжутся в ближайшее время.</p></div>');
 				//gtag('event','submit',{'event_category':'submit','event_action':goalId});
 				//fbq('track', 'Lead');
 			})()
@@ -63,7 +64,6 @@ $(function() {
 		appendArrows: $('.head-control'),
 		appendDots: $('.head-control'),
 		autoplay: true,
-		pauseOnFocus: false,
 		pauseOnHover:false
 	});
 
@@ -162,5 +162,14 @@ $(function() {
 	});
 
 	$('.reviews-item__txt').matchHeight();
+
+	$(".reviews-item__txt span").each(function(){
+		var review = $(this).html();
+		if(review.length > 90) {
+			review = review.substring(0, 90);
+			$(this).html(review + '...');
+			$('.read_more').addClass('show');
+		}
+	});
 	
 });

@@ -672,6 +672,15 @@ button
 			outline: none
 			&:nth-child(2n)
 				margin-top: 40px
+		&__slide
+			display: block
+			outline: 0
+			margin: 0 10px
+			height: 265px
+			background-size: cover
+			background-position: center center
+			&:nth-child(2n)
+				margin-top: 40px
 
 .diagnostics
 	padding: 50px 0
@@ -1326,6 +1335,11 @@ button
 					background-image: url(../img/quotes-left_green.svg)
 				&:after
 					background-image: url(../img/quotes-right_green.svg)
+			.read_more
+				border-color: #fff
+				color: #fff
+				&:hover
+					color: #fff
 		&_grey
 			background-color: #E8E8E8
 			color: #000
@@ -1337,6 +1351,11 @@ button
 					background-image: url(../img/quotes-left_gray.svg)
 				&:after
 					background-image: url(../img/quotes-right_gray.svg)
+			.read_more
+				border-color: #000
+				color: #000
+				&:hover
+					color: #000
 		&__name
 			font-size: 20px
 			position: relative
@@ -1797,6 +1816,8 @@ button
 		padding: 30px
 		background-color: #000
 		color: #fff
+	&-review
+		max-width: 600px
 
 select.modal-service-form__input
     outline: 0
@@ -1811,5 +1832,12 @@ select.modal-service-form__input
 		fill: #fff
 		path
 			fill: #fff
+
+.read_more
+	margin-top: 20px
+	display: none
+	border-bottom: 1px solid
+	&.show
+		display: table
 
 @import "media" // Always at the end
